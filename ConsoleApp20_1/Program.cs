@@ -37,7 +37,10 @@ namespace ConsoleApp3_4
             Console.WriteLine("Длина окружности = {0}", lenght?.Invoke(radius));
             Console.WriteLine("Площадь круга = {0}", square?.Invoke(radius));
             Console.WriteLine("Объём шара = {0}", volume?.Invoke(radius));
+            Console.WriteLine();
             Console.ReadKey();
+            Run();
+            Environment.Exit(0);
         }
         public static double Lenght(double r)
         {
